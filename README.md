@@ -28,6 +28,8 @@ Provided below are descriptions of the stories I worked on, along with code snip
 
 ### Sign-in-page
 In this story I had to create a function using JavaScript and/or jQuery to count the number of names on the sign-in page and display them next to the title. I used a bootstrap badge to style the number displayed. 
+
+#### HTML
 ```
 <div class="py-5 text-center">
   @*Centered text and padded bottom*@
@@ -41,6 +43,7 @@ In this story I had to create a function using JavaScript and/or jQuery to count
   <p>EXAMPLE NAME</p>
 </div>
 ```
+#### JavaScript/jQuery
 ```
 //returns number of people Signed in
 //function signInList() {
