@@ -10,10 +10,40 @@ Provided below are descriptions of the stories I worked on, along with code snip
 - [Create Entity Model and CRUD Pages](#Create-Entity-Model-and-CRUD-Pages)
 - [Photo Storage and Retrieval](#Photo-Storage-and-Retrieval)
 
-### Sign-in-page
-
 ### Create Entity Model and CRUD Pages
+In this story I had to create an entity model for the CastMember class so that individual cast members of the theater can be saved to the databse. 
 
+1. First I created my CastMember class with the given properties. One of the properties was a special class of type enum. I used that for a dropdown that a cast member can select their role. After creating the class CastMember I used the NuGet Package manager > Package Manager Console to update-database which created the database-schema for the class.
+```
+namespace TheatreCMS3.Areas.Prod.Models
+{
+    public class CastMember
+    {
+        public int CastMemberId { get; set; }
+        public string Name { get; set; }
+        public string Bio { get; set; }
+        public byte[] Photo { get; set; }
+        public int? YearJoined { get; set; }
+        public int? YearLeft { get; set; }
+        public PositionEnum MainRole { get; set; }
+        public bool CurrentMember { get; set; }
+        public bool AssociateArtist { get; set; }
+        public bool EnsembleMember { get; set; }
+        public int? DebutYear { get; set; }
+        public string ProductionTitle { get; set; }
+    }
+
+    public enum PositionEnum
+    {
+        Actor,
+        Director,
+        StageManager,
+        Technician,
+        Other
+    }
+}
+```
+next I began scaffolding my CRUD pages/controller. 
 ### Photo Storage and Retrieval
 
 
@@ -61,6 +91,7 @@ function signInList() {
 signInList();
 ```
 ![](Images/SignInNumber.png)
+
 ### Style Create & Edit Pages
 
 ### Style Index Page
