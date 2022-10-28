@@ -23,6 +23,8 @@ Provided below are descriptions of the stories I worked on, along with code snip
 
 #### Photo Storage and Retrieval
 
+---
+
 #### Style Create & Edit Pages
 
 #### Style Index Page
