@@ -11,11 +11,11 @@ Provided below are descriptions of the stories I worked on, along with code snip
 ### Back-End
 - [Sign-In-Page](#Sign-in-page)
 - [Create Entity Model and CRUD Pages](#Create-Entity-Model-and-CRUD-Pages)
-- [Photo Storage and Retrieval](#Photo Storage and Retrieval)
+- [Photo Storage and Retrieval](#Photo-Storage-and-Retrieval)
 ### Front-End
-- [Style Create & Edit Pages](#Style Create & Edit Pages)
-- [Style Index Page](#Style Index Page)
-- [Style Details & Delete Pages](#Style Details & Delete Pages)
+- [Style Create & Edit Pages](#Style Create-&-Edit-Pages)
+- [Style Index Page](#Style-Index-Page)
+- [Style Details & Delete Pages](#Style-Details-&-Delete-Pages)
 ---
 
 #### Sign-in-page
