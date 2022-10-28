@@ -21,7 +21,7 @@ Provided below are descriptions of the stories I worked on, along with code snip
 ## Front-End Stories
 - [Sign-In-Page](#Sign-in-page)
 
-- `//returns number of people Signed in
+- ```//returns number of people Signed in
 //function signInList() {
 //    var divList = document.getElementById("PersonList");
 //    var names = divList.getElementsByTagName("p").length;
@@ -33,7 +33,7 @@ function signInList() {
     var divList = $("#PersonList p");
     $("#NumPersons").html(divList.length);
 }
-signInList();`
+signInList();```
 
 - [Style Create & Edit Pages](#Style-Create-&-Edit-Pages)
 - [Style Index Page](#Style-Index-Page)
