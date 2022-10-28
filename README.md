@@ -44,6 +44,7 @@ In this story I had to create a function using JavaScript and/or jQuery to count
 </div>
 ```
 - #### JavaScript/jQuery
+The block of code that is commented out was my initial attempt writing a function to display the number of developers signed in. It worked but I was challenged to find an alternative method. I then incorparated jQuery to target the elements I wanted to change opposed to using the `document.getElementById()` method.
 ```
 //returns number of people Signed in
 //function signInList() {
