@@ -7,7 +7,6 @@
 Provided below are descriptions of the stories I worked on, along with code snippets and navigation links. 
 
 ## Back-End Stories
-- [Sign-In-Page](#Sign-in-page)
 - [Create Entity Model and CRUD Pages](#Create-Entity-Model-and-CRUD-Pages)
 - [Photo Storage and Retrieval](#Photo-Storage-and-Retrieval)
 
@@ -20,9 +19,12 @@ Provided below are descriptions of the stories I worked on, along with code snip
 *Jump to: [Front-End Stories](#Fronte-End-Stories), [Back-End Stories](#Back-End-Stories), [Skills Learned](#Skills-Learned), [Top Page](#Introduction)*
 
 ## Front-End Stories
+- [Sign-In-Page](#Sign-in-page)
 - [Style Create & Edit Pages](#Style-Create-&-Edit-Pages)
 - [Style Index Page](#Style-Index-Page)
 - [Style Details & Delete Pages](#Style-Details-&-Delete-Pages)
+
+### Sign-in-page
 
 ### Style Create & Edit Pages
 
@@ -30,4 +32,8 @@ Provided below are descriptions of the stories I worked on, along with code snip
 
 ### Style Details & Delete Pages
 
-### Skills Learned
+## Skills Learned
+-
+-
+-
+
