@@ -59,7 +59,7 @@ function signInList() {
 }
 signInList();
 ```
-![](Images/[https://github.com/Itz-Djin/TTA-Live-Projects/blob/main/Images/SignInNumber.png](https://github.com/Itz-Djin/TTA-Live-Projects/blob/main/Images/SignInNumber.png))
+![](Images/SignInNumber.png)
 ### Style Create & Edit Pages
 
 ### Style Index Page
