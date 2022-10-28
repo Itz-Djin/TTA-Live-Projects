@@ -49,7 +49,11 @@ namespace TheatreCMS3.Areas.Prod.Models
 
 
 ### Photo Storage and Retrieval
-The goal of this story was to allow users to upload files from their file system that would then display an image of themself with their details. This image would be converted into a byte array (byte[]) and stored in the database as such. The byte[] representing the photo would be retrieved from the databse and converted back into an image where it can be displayed on a View. This is demonstrated in the code block below. The if statement is nested in my `public ActionResult Create([Bind(Include = "CastMemberId,Name,Bio,YearJoined,YearLeft,MainRole,CurrentMember,AssociateArtist,EnsembleMember,DebutYear,Photo,ProductionTitle")] CastMember castMember, HttpPostedFileBase photo1)` method. 
+The goal of this story was to allow users to upload files from their file system that would then display an image of themself with their details. This image would be converted into a byte array (byte[]) and stored in the database as such. The byte[] representing the photo would be retrieved from the databse and converted back into an image where it can be displayed on a View. This is demonstrated in the code block below. The if statement is nested in my
+```
+public ActionResult Create([Bind(Include = "CastMemberId,Name,Bio,YearJoined,YearLeft,MainRole,CurrentMember,AssociateArtist,EnsembleMember,DebutYear,Photo,ProductionTitle")] CastMember castMember, HttpPostedFileBase photo1)
+
+``` method. 
 ```
 if (ModelState.IsValid)
 {
