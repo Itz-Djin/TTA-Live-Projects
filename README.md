@@ -17,7 +17,7 @@ Provided below are descriptions of the stories I worked on, along with code snip
 
 ### Photo Storage and Retrieval
 
-*Jump to:* [Front-End Stories](#Fronte-End-Stories), [Back-End Stories](#Back-End-Stories), [Skills Learned](#Skills-Learned), [Top Page](#Introduction)
+*Jump to: [Front-End Stories](#Fronte-End-Stories), [Back-End Stories](#Back-End-Stories), [Skills Learned](#Skills-Learned), [Top Page](#Introduction)*
 
 ## Front-End Stories
 - [Style Create & Edit Pages](#Style-Create-&-Edit-Pages)
