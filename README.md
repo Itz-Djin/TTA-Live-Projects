@@ -16,11 +16,31 @@ Provided below are descriptions of the stories I worked on, along with code snip
 
 ### Photo Storage and Retrieval
 
+
 *Jump to: [Front-End Stories](#Fronte-End-Stories), [Back-End Stories](#Back-End-Stories), [Skills Learned](#Skills-Learned), [Top Page](#Introduction)*
+
 
 ## Front-End Stories
 - [Sign-In-Page](#Sign-in-page)
+- [Style Create & Edit Pages](#Style-Create-&-Edit-Pages)
+- [Style Index Page](#Style-Index-Page)
+- [Style Details & Delete Pages](#Style-Details-&-Delete-Pages)
 
+### Sign-in-page
+In this story I had to create a function using JavaScript and/or jQuery to count the number of names on the sign-in page and display them next to the title. I used a bootstrap badge to style the number displayed. 
+```
+<div class="py-5 text-center">
+  @*Centered text and padded bottom*@
+  <h1>Developers Of TheatreCMS &nbsp;<span id="NumPersons" class="badge badge-secondary">Total</span></h1>
+  <h2>SignIn</h2>
+</div>
+
+@* Add your name to the bottom of the list like so: *@
+@* <p>YOUR NAME</p> *@
+<div class="home-signin--container" id="PersonList">
+  <p>EXAMPLE NAME</p>
+</div>
+```
 ```
 //returns number of people Signed in
 //function signInList() {
@@ -37,20 +57,19 @@ function signInList() {
 signInList();
 ```
 
-- [Style Create & Edit Pages](#Style-Create-&-Edit-Pages)
-- [Style Index Page](#Style-Index-Page)
-- [Style Details & Delete Pages](#Style-Details-&-Delete-Pages)
-
-### Sign-in-page
-
 ### Style Create & Edit Pages
 
 ### Style Index Page
 
 ### Style Details & Delete Pages
 
+
+*Jump to: [Front-End Stories](#Fronte-End-Stories), [Back-End Stories](#Back-End-Stories), [Skills Learned](#Skills-Learned), [Top Page](#Introduction)*
+
+
 ## Skills Learned
 -
 -
 -
 
+*Jump to: [Front-End Stories](#Fronte-End-Stories), [Back-End Stories](#Back-End-Stories), [Skills Learned](#Skills-Learned), [Top Page](#Introduction)*
