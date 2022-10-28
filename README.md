@@ -95,7 +95,8 @@ signInList();
 ![](Images/SignInNumber.png)
 
 ### Style Create & Edit Pages
-- For this story I had to style the create and edit pages. I was assigned to add a header, style buttons, add placeholders to the input fields, center the container, and add other styling that would create uniformity with the other pages. I used razor syntax to use information from the 
+For this story I had to style the create and edit pages. I was assigned to add a header, style buttons, add placeholders to the input fields, center the container, and add other styling that would create uniformity with the other pages. I used razor syntax to use information from the 
+- #### Cshtml
 ```
 @model TheatreCMS3.Areas.Prod.Models.CastMember
 
@@ -225,6 +226,176 @@ signInList();
     @Scripts.Render("~/bundles/jqueryval")
 }
 ```
+
+- #### css
+With the css that was added, the team and I agreed upon a naming convention and some general styles to have uniformity throughout the entire prodcutions area of the Theater website. This would help us to use DRY coding principles.
+```
+.Prod-All-container /*.CastMembers-CreateEdit--Container*/ {
+    border-radius: .25rem;
+    background-color: var(--main-color);
+    padding-bottom: 1rem;
+}
+
+.Prod-All-header /*.CastMembers-CreateEdit--header*/ {
+    text-align: center;
+    margin-top: 9px;
+}
+
+.Prod-All-label /*Form Labels (was CastMembers-CreateEdit--label)*/ {
+    color: var(--dark-color);
+    font-weight: 700;
+    max-width: 100%;
+    text-shadow: -.2px 1px 0px var(--light-color);
+}
+
+.Prod-All-form /* (Form Input boxes (was CastMembers-CreateEdit--form)*/ {
+    background-color: var(--secondary-color);
+    border-color: var(--main-color);
+    color: white;
+}
+
+    .Prod-All-form:focus {
+        color: var(--secondary-color);
+        border-color: var(--dark-color);
+        background-color: var(--light-color);
+        box-shadow: 10px 5px 5px var(--secondary-color);
+    }
+
+    .Prod-All-form::placeholder {
+        color: var(--light-color);
+        opacity: 1; /* Firefox */
+    }
+
+    .Prod-All-form:focus::placeholder {
+        color: var(--secondary-color);
+        opacity: 1; /* Firefox */
+    }
+
+.Prod-All-MainBtn {
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    padding: 3px 6px 3px 6px;
+    font-weight: bold;
+}
+
+    .Prod-All-MainBtn:hover {
+        background-color: var(--dark-color);
+        color: var(--secondary-color--dark);
+    }
+
+.Prod-All-SecondaryBtn {
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: var(--light-color);
+    padding: 3px 6px 3px 6px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--dark-color);
+}
+
+    .Prod-All-SecondaryBtn:hover {
+        background-color: var(--dark-color);
+        color: var(--secondary-color--dark);
+    }
+
+.Prod-All-PillBadgeColor {
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+}
+
+    .Prod-All-PillBadgeColor:hover {
+        background-color: var(--dark-color);
+        color: var(--secondary-color--dark);
+    }
+
+.Prod-All-textsearchbox_spacing {
+    margin-left: .5rem;
+}
+
+.Prod-All-topsearchbox_width {
+    width: 25%;
+}
+
+.Prod-All-PagingLinkPos {
+    float: right;
+}
+
+.Prod-All-PagingPageContainer {
+    padding-top: 2.5rem;
+    text-align: center;
+}
+
+.Prod-All-PagingPageNum {
+    font-weight: bold;
+}
+
+.Prod-All-PagingLinkButton {
+    text-decoration: none;
+    color: var(--dark-color)
+}
+
+    .Prod-All-PagingLinkButton:hover {
+        background-color: var(--dark-color);
+        color: var(--secondary-color--dark);
+        text-decoration: none;
+    }
+
+.Prod-All-modalheader {
+    background-color: var(--dark-color);
+    color: var(--dark-color);
+}
+
+.Prod-All-modaltitle {
+    text-align: center;
+    margin-top: -10px;
+    padding-bottom: 1rem;
+    text-decoration: underline solid var(--secondary-color--dark) 3px;
+    /* color: var(--dark-color); */
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px var(--secondary-color);
+    font-weight: 800;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+
+.Prod-All-modaldt {
+    color: var(--dark-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+    width: max-content;
+    padding: 6px 0px 6px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: 2px 2px 3px white;
+}
+
+.Prod-All-modaldd {
+    background-color: var(--secondary-color);
+    border-color: var(--main-color);
+    color: var(--light-color);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2px 5px;
+}
+
+.Prod-All-modalclosebutton {
+    background-color: transparent;
+    border: 0;
+    color: var(--light-color);
+    float: right;
+}
+
+    .Prod-All-modalclosebutton:hover {
+        background-color: transparent;
+        border: 0;
+        color: var(--main-color);
+        float: right;
+    }
+```
+![](Images/CreateCastMemberPage.png)
+![](Images/EditPage.png)
 
 ### Style Index Page
 
