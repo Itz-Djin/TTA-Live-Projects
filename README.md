@@ -43,7 +43,8 @@ namespace TheatreCMS3.Areas.Prod.Models
     }
 }
 ```
-next I began scaffolding my CRUD pages/controller. 
+next I began scaffolding my CRUD pages/controller. Which builds the controller first then all the CRUD pages with their respective functionality.
+![](Images/CastMemberController.png)
 ### Photo Storage and Retrieval
 
 
