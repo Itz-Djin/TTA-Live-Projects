@@ -46,8 +46,27 @@ namespace TheatreCMS3.Areas.Prod.Models
 2. next I began scaffolding my CRUD pages/controller. Which builds the controller first then all the CRUD pages with their respective functionality. I chose the Model Class that I created, a context class that would define the main entry point for the LINQ to SQL framework. Automatically generated views and a base layout page that would have a uniform navigation panel and styling for all the pages.  
 ![](Images/CastMemberController.png)
 ![](Images/imgofCRUD.png)
-### Photo Storage and Retrieval
 
+
+### Photo Storage and Retrieval
+The goal of this story was to allow users to upload files from their file system that would then display an image of themself with their details. This image would be converted into a byte array (byte[]) and stored in the database as such. The byte[] representing the photo would be retrieved from the databse and converted back into an image where it can be displayed on a View. This is demonstrated in the code block below. The if statement is nested in my `public ActionResult Create([Bind(Include = "CastMemberId,Name,Bio,YearJoined,YearLeft,MainRole,CurrentMember,AssociateArtist,EnsembleMember,DebutYear,Photo,ProductionTitle")] CastMember castMember, HttpPostedFileBase photo1)` method. 
+```
+if (ModelState.IsValid)
+{
+    if (photo1 == null)
+    {
+        castMember.Photo = null;
+    }
+    else { 
+    castMember.Photo = new byte[photo1.ContentLength];
+    photo1.InputStream.Read(castMember.Photo, 0, photo1.ContentLength);
+    }
+    db.CastMembers.Add(castMember);
+    db.SaveChanges();
+    return RedirectToAction("Index");
+```
+
+- Here I create a method in my controller that has a parameter for an uploaded photo and converts that photo into a byte[]. I also had to add a new file input field to the Create and Edit Views that would utilize that method I created in the controller converting images to byte[]'s. This is the storage portion of the story.
 
 *Jump to: [Front-End Stories](#Fronte-End-Stories), [Back-End Stories](#Back-End-Stories), [Skills Learned](#Skills-Learned), [Top Page](#Introduction)*
 
