@@ -43,8 +43,9 @@ namespace TheatreCMS3.Areas.Prod.Models
     }
 }
 ```
-next I began scaffolding my CRUD pages/controller. Which builds the controller first then all the CRUD pages with their respective functionality.
+2. next I began scaffolding my CRUD pages/controller. Which builds the controller first then all the CRUD pages with their respective functionality. I chose the Model Class that I created, a context class that would define the main entry point for the LINQ to SQL framework. Automatically generated views and a base layout page that would have a uniform navigation panel and styling for all the pages.  
 ![](Images/CastMemberController.png)
+![](Images/imgofCRUD.png)
 ### Photo Storage and Retrieval
 
 
