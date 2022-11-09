@@ -491,8 +491,9 @@ For this story I had to revamp the Index page that would show each individual Ca
 
 
 ## Skills Learned
--
--
--
+Some newly acquired skills as well as developed a stronger understanding of some skills
+- Learning how to read and navigate documentation to get a better understanding of what a function, class or concept may do. You don't know what you don't know and this allowed me to learn what I didn't know to better hone in on more specific questions leading me to an answer faster.
+- Joining in on a codebase that had already been created. I learned how to navigate and debug a codebase/project that had already begun. I would debug from the begininng and step through anything I might not have had a full grasp on so I knew how my contributions could better advance the project in the direction that the PM instructed.
+- Eventually getting far enough into the project my cohorts and I got together realizing the CSS we were creating wasn't in unison. Where we could practice DRY programming methods in order to consolidate our code. We created general CSS variables and classes that we could all use that would help uniformity through the entirety of the website.
 
 *Jump to: [Front-End Stories](#Fronte-End-Stories), [Back-End Stories](#Back-End-Stories), [Skills Learned](#Skills-Learned), [Top Page](#Introduction)*
