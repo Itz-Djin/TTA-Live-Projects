@@ -431,6 +431,56 @@ With the css that was added, the team and I agreed upon a naming convention and 
 ![](Images/EditPage.png)
 
 ### Style Index Page
+For this story I had to revamp the Index page that would show each individual Cast Member. The previous Index page displayed the Cast Members in a list format with all their respective details creating a vertically growing page everytime a new Cast Member was added. Instead I thought It would be best to edit the index page to organize each Cast Member to their respective production/play they were in and give cards that a user can hover over that would then display the Cast Members name, and two buttons the edit and delete. Those 3 hover elements would link to various pages for other functionality. 
+- #### Cshtml
+```
+@model IEnumerable<TheatreCMS3.Areas.Prod.Models.CastMember>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var GroupByProdTitle = Model.GroupBy(Model => Model.ProductionTitle);
+}
+
+<div class="Prod-All-header">
+    <h1>@ViewBag.Title</h1>
+</div>
+
+<div class="col-md-offset-2 col-md-12">
+    @Html.ActionLink("Create New", "Create", null, new { @class = "btn Prod-All-MainBtn" })
+</div>
+
+<div class="">
+    @foreach (var group in GroupByProdTitle)
+    { 
+        <h2 class="CastMember-Index-ProdTitles">@group.Key</h2>
+        <hr style="background-color:var(--main-color);"/>
+        <div class="row">
+            @foreach (var member in group)
+            {
+                <a href="@Url.Action("Details", "CastMembers", new { id = member.CastMemberId })">
+                    <div class="card border-danger ml-3 CastMember-Index-Container">
+                            @if (member.Photo != null)
+                            {<img class="CastMember-Index-Image"
+                                  alt="@member.CastMemberId"
+                                  src="data:image/jpg;base64, @Convert.ToBase64String(member.Photo)" />
+                            }
+                            else
+                            { <img src="~/Content/images/Cast_Img_1.jpg" />}
+                        <div class="card-img-overlay CastMember-Index-Overlay">
+                            <div class="CastMember-Index-InnerBadges">
+                                <h5 class="CastMember-Index-h5">@Html.DisplayFor(Model => member.Name, new { @class = "" })</h5>
+                                @Html.ActionLink("Edit", "Edit", new { id = member.CastMemberId }, new { @class = "badge Prod-All-PillBadgeColor" })
+                                @Html.ActionLink("Delete", "Delete", new { id = member.CastMemberId }, new { @class = "badge Prod-All-PillBadgeColor" })
+                            </div>
+                        </div>
+                    </div>
+                </a>
+             }
+        </div>
+    }
+</div>
+```
 
 ### Style Details & Delete Pages
 
