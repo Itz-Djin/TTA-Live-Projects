@@ -433,6 +433,7 @@ With the css that was added, the team and I agreed upon a naming convention and 
 ### Style Index Page
 For this story I had to revamp the Index page that would show each individual Cast Member. The previous Index page displayed the Cast Members in a list format with all their respective details creating a vertically growing page everytime a new Cast Member was added. Instead I thought It would be best to edit the index page to organize each Cast Member to their respective production/play they were in and give cards that a user can hover over that would then display the Cast Members name, and two buttons the edit and delete. Those 3 hover elements would link to various pages for other functionality. 
 - #### Cshtml
+- The code below utilizes a created variable for the productions title and a nested `if()` and `foreach()` statement. The first foreach statement would loop through however many production titles there may be and store a member of that production title within its `<h2></h2>` element. The second foreach loop would then create a bootstrap card with some custom classes to maintain a uniform style for each cast member. The if statement would check if the cast member submitted a photo with their form, obtain the byte[] array from the database and convert it To a base 64 string in order to display the photo. If no photo was given the database field for photo would be null and a generic image would instead be displayed.
 ```
 @model IEnumerable<TheatreCMS3.Areas.Prod.Models.CastMember>
 
@@ -481,6 +482,7 @@ For this story I had to revamp the Index page that would show each individual Ca
     }
 </div>
 ```
+![](Images/Index.png)
 
 ### Style Details & Delete Pages
 
